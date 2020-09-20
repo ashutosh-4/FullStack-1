@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical-14</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #a4b494;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h1 {
+    text-align: center;
+    margin: 30px;
+    color: #1d2d50;
+    font-size: 45px;
+}
+
+article {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 20px auto;
+}
+
+section {
+    background-color: white;
+    height: 420px;
+    width: 350px;
+    margin: 20px 15px;
+    box-shadow: 2px 2px 6px gray;
+}
+
+.header {
+    background-image: linear-gradient(to right, #7d0633, #056674);
+    height: 130px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    font-size: 22px;
+}
+
+h3 {
+    text-align: center;
+    padding: 15px;
+    font-size: 22px;
+}
+
+span:hover {
+    cursor: pointer;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+}
+
+.icons a {
+    margin: 0px 20px;
+    color: white;
+}
+
+.fa-facebook:hover {
+    color: #3b5998;
+}
+
+.fa-twitter:hover {
+    color: #00aced;
+}
+
+.fa-google-plus:hover {
+    color: #dd4b39;
+}
+
+.userinputs {
+    margin-top: 25px;
+    padding: 15px;
+}
+
+input[type="email"],
+input[type="password"] {
+    display: block;
+    border: none;
+    border-bottom: 1px solid black;
+    width: 100%;
+    margin: 15px 0px;
+    height: 30px;
+    outline: none;
+    font-size: 15px;
+    padding: 5px;
+}
+
+.userinputs p {
+    float: right;
+}
+
+.loginbutton {
+    margin: 15px;
+    margin-top: 60px;
+}
+
+.loginbutton::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+button {
+    float: left;
+    display: block;
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    box-shadow: 2px 2px 5px gray;
+    color: white;
+    font-weight: bold;
+    font-size: medium;
+}
+
+.login1 button {
+    background-color: #7d0633;
+}
+
+.login1 button:hover {
+    background-color: #056674;
+}
+
+.loginbutton p {
+    float: right;
+    line-height: 40px;
+}
+
+.login2 h3 {
+    color: #f40552;
+}
+
+.login2 .userinputs {
+    margin-top: 0px;
+}
+
+input[type="checkbox"] {
+    display: inline;
+    border: none;
+    font-size: 15px;
+}
+
+.login2 button {
+    background-color: #f40552;
+}
+
+.login2 button:hover {
+    background-color: #8ec6c5;
+}
+
+.login2 .icons {
+    margin-top: 30px;
+    background-color: #8ec6c5;
+    height: 81px;
+}
+
+.login3 h3 {
+    color: #e79c2a;
+}
+
+.login3 .userinputs {
+    margin-top: 0px;
+}
+
+.loginbutton {
+    margin-bottom: 0px;
+}
+
+.login3 button {
+    margin-top: 20px;
+    width: 100%;
+    background-image: linear-gradient(to right, #cf7500, #fbfd8a);
+}
+
+.login3 button:hover {
+    color: black;
+}
+
+.login3 .loginbutton p {
+    float: unset;
+    text-align: center;
+}
+
+.login3 .icons a {
+    width: 60px;
+    height: 30px;
+    color: #cf7500;
+    border: 2px solid white;
+    box-shadow: 1px 1px 2px grey;
+    border-radius: 20px;
+    line-height: 30px;
+    text-align: center;
+    padding: 0px;
+}
+
+.login3 input[type="email"]:focus,
+.login3 input[type="password"]:focus {
+    border-color: #cf7500;
+}
+
+@media(max-width:760px) {
+    section {
+        width: 70%;
+    }
+}
+
+@media(max-width:480px) {
+    body {
+        min-width: 370px;
+    }
+    section {
+        width: 100%;
+    }
+}
+    </style>
+</head>
+
+<body>
+
+    <H1>FORM TEMPLATES</H1>
+    <article>
+        <section>
+            <form class="login1" action="#" name="form1">
+                <div class="header">
+                    <h3>Log In</h3>
+                    <div class="icons">
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-google-plus"></i></a>
+                    </div>
+                </div>
+                <div class="userinputs">
+                    <input type="email" placeholder="Your Email" required name="emailid">
+                    <input type="password" placeholder="Your Password" required name="password">
+                    <p>Forget <span style="font-weight: bolder;color:  #056674;"> Password?</span></p>
+                </div>
+                <div class="loginbutton">
+                    <Button type="submit">LOGIN</Button>
+                    <p>Dont have an account? <span style="font-weight: bolder; color:  #056674;">Sign Up</span></p>
+                </div>
+            </form>
+        </section>
+        <section>
+            <form class="login2" action="#" name="form2">
+                <h3>Sign Up</h3>
+                <div class="userinputs">
+                    <input type="email" placeholder="Your Email" required name="emailid">
+                    <input type="password" placeholder="Your Password" required name="password">
+                    <input type="checkbox" name="terms" id="terms">
+                    <label for="terms">Accept the <span style="color:#f40552;">Terms and Conditions</span></label>
+                </div>
+                <div class="loginbutton">
+                    <Button type="submit">SIGN UP</Button>
+                    <p>Have an account? <span style="color:#f40552;">Login</span></p>
+                </div>
+                <div class="icons">
+                    <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                    <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                    <a href="#" class="google"><i class="fa fa-google-plus"></i></a>
+                </div>
+            </form>
+        </section>
+        <section>
+            <form class="login3" action="#" name="form3">
+                <h3>Sign In</h3>
+                <div class="userinputs">
+
+                    <input type="email" placeholder="Your Email" required name="emailid" id="emailid">
+                    <input type="password" placeholder="Your Password" required name="password" id="password">
+                    <p style="color: #cf7500; font-weight: bolder;">Forget Password?</p>
+                </div>
+                <div class="loginbutton">
+                    <Button type="submit">SIGN IN</Button>
+                    <p style="font-weight: bolder;">or Sign in with</p>
+                </div>
+                <div class="icons">
+                    <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                    <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                    <a href="#" class="google"><i class="fa fa-google-plus"></i></a>
+                </div>
+            </form>
+        </section>
+    </article>
+
+</body>
+
+</html>
