@@ -33,7 +33,7 @@ function setGreeting() {
     var today = new Date();
     var h = today.getHours();
     if (h < 12) {
-        document.body.style.backgroundImage = 'url("./images/morning.jpg")';
+        document.body.style.backgroundImage = 'url("https://ashutosh-4.github.io/FullStack-1/images/morning.jpg")';
         greeting.innerHTML = "GOOD MORNING";
     } else if (h < 18) {
         document.body.style.backgroundImage = 'url("./images/afternoon.jpg")';
