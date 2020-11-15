@@ -33,13 +33,13 @@ function setGreeting() {
     var today = new Date();
     var h = today.getHours();
     if (h < 12) {
-        document.body.style.backgroundImage = 'url("../img/morning.jpg")';
+        document.body.style.backgroundImage = 'url("../images/morning.jpg")';
         greeting.innerHTML = "GOOD MORNING";
     } else if (h < 18) {
-        document.body.style.backgroundImage = 'url("../img/afternoon.jpg")';
+        document.body.style.backgroundImage = 'url("../images/afternoon.jpg")';
         greeting.innerHTML = "GOOD AFTERNOON";
     } else {
-        document.body.style.backgroundImage = 'url("../img/evening.jpg")';
+        document.body.style.backgroundImage = 'url("../images/evening.jpg")';
         document.body.style.color = "white"
         greeting.innerHTML = "GOOD EVENING";
     }
