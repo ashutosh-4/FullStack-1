@@ -36,10 +36,10 @@ function setGreeting() {
         document.body.style.backgroundImage = 'url("https://ashutosh-4.github.io/FullStack-1/images/morning.jpg")';
         greeting.innerHTML = "GOOD MORNING";
     } else if (h < 18) {
-        document.body.style.backgroundImage = 'url("./images/afternoon.jpg")';
+        document.body.style.backgroundImage = 'url("https://ashutosh-4.github.io/FullStack-1/images/afternoon.jpg")';
         greeting.innerHTML = "GOOD AFTERNOON";
     } else {
-        document.body.style.backgroundImage = 'url("./images/evening.jpg")';
+        document.body.style.backgroundImage = 'url("https://ashutosh-4.github.io/FullStack-1/images/evening.jpg")';
         document.body.style.color = "white"
         greeting.innerHTML = "GOOD EVENING";
     }
